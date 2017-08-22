@@ -13,6 +13,7 @@ RUN cd /tmp && tar zxvf pgpool-II-3.3.4.tar.gz
 RUN cd  /tmp/pgpool-II-3.3.4/ && mkdir -p /opt/pgpool && ./configure --prefix=/opt/pgpool/ --with-pgsql=/usr/pgsql-9.4/
 RUN cd  /tmp/pgpool-II-3.3.4/ && make && make install
 
+
 ##安装pgpool函数
 #RUN cd /tmp/pgpool-II-3.3.4/sql/pgpool-regclass/ && make && make install
 #RUN cd /tmp/pgpool-II-3.3.4/sql/pgpool-recovery/ && make && make install
