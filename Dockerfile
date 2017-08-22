@@ -1,5 +1,5 @@
 FROM centos:7
-RUN rpm -ivh https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-6-x86_64/pgdg-centos94-9.4-3.noarch.rpm
+RUN rpm -ivh https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-7-x86_64/pgdg-centos94-9.4-3.noarch.rpm
 
 RUN yum install -y net-tools postgresql94 postgresql94-server wget gcc-c++ libpqxx-devel libpqxx postgresql-devel  make
 
